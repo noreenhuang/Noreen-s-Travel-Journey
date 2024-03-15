@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURTRIES page</title>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color:hsl(193, 69%, 73%);
+      background-size: cover;
+    }
+  
+    .header {
+      text-align: center;
+      padding: 20px;
+      filter: alpha(opactive=50);
+      opacity: 0.7;
+      background-image: url(图片6.png); 
+      color: hsl(193, 69%, 73%);
+    }
+
+    .block {
+      display:inline-table;
+      width: 240px;
+      height: 40px;
+      background-color: rgb(228, 136, 136);
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+      line-height: 40px;
+    }
+
+    .block:hover{
+      background-color: aquamarine;
+      color: #000;
+    }
+    .herf{
+        text-align: left;
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    <header class="header"> 
+        <h1>Noreen's Travel Journey</h1>
+        <div class="gray">
+          Date: 2024-02-26
+          <input type="text" id="searchInput" placeholder="Please input your question">
+      <button id="searchButton">search</button>
+        </div>
+      </header>
+        <a class="block" href="project.html">HOME</a>
+        <a class="block" href="Untitled-3.html">PLANNING</a>
+        <a class="block" href="Untitled-2.html">BLOG</a>
+        <a class="block" href="Untitled-1.html">FEEDBACK</a>
+        <a class="block" href="Untitled-4.html">COURTRIES</a>
+        <a class="block" href="Untitled-5.html">PICTURES</a>
+      <ul class="herf">
+        <li><a href="https://en.wikipedia.org/wiki/Paris">intro to France(document from wiki)</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Shanghai">Shanghai, China(document from wiki)</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Tokyo">Tokyo, Japan(document from wiki)</a></li> 
+      </ul>
+    <script>
+        const searchButton = document.getElementById('searchButton');
+        const searchInput = document.getElementById('searchInput');
+
+        searchButton.addEventListener('click', function() {
+            var searchTerm = searchInput.value; 
+            if (searchTerm.trim() !== "") {
+                alert("You are search for:" + searchTerm);
+            } else {
+                alert("Please enter a search term.");
+            }
+        });
+    </script>
+</body>
+</html>

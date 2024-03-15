@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(https://iso.500px.com/wp-content/uploads/2015/08/travel_cover-1500x1000.jpeg);
+  background-size: cover;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  filter: alpha(opactive=50);
+  opacity: 0.7;
+  background-image: url(图片6.png); 
+  color: hsl(193, 69%, 73%);
+}
+
+.block {
+  display:inline-table;
+  width: 240px;
+  height: 40px;
+  background-color: rgb(228, 136, 136);
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.block:hover{
+  background-color: aquamarine;
+  color: #000;
+}
+
+.gray {
+  color:gray;
+  font-size: 12px;
+  text-align: center;
+}
+input{
+  color: #9f9f9f;
+  width: 170px;
+}
+.main-content {
+  padding: 20px;
+  color: #4d3131;
+}
+
+p {
+  text-indent: 2em;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 45vw;
+}
+
+.pic {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25vh;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.pic.active{
+  flex: 2;
+}
+
+

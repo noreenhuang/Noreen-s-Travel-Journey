@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANNING page</title>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color:hsl(193, 69%, 73%);
+      background-size: cover;
+    }
+  
+    .header {
+      text-align: center;
+      padding: 20px;
+      filter: alpha(opactive=50);
+      opacity: 0.7;
+      background-image: url(图片6.png); 
+      color: hsl(193, 69%, 73%);
+    }
+
+    .block {
+      display:inline-table;
+      width: 240px;
+      height: 40px;
+      background-color: rgb(228, 136, 136);
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+      line-height: 40px;
+    }
+
+    .block:hover{
+      background-color: aquamarine;
+      color: #000;
+    }
+</style>
+</head>
+<body>
+    <header class="header"> 
+        <h1>Noreen's Travel Journey</h1>
+        <div class="gray">
+          Date: 2024-02-26
+          <input type="text" id="searchInput" placeholder="Please input your question">
+      <button id="searchButton">search</button>
+        </div>
+      </header>
+        <a class="block" href="project.html">HOME</a>
+        <a class="block" href="Untitled-3.html">PLANNING</a>
+        <a class="block" href="Untitled-2.html">BLOG</a>
+        <a class="block" href="Untitled-1.html">FEEDBACK</a>
+        <a class="block" href="Untitled-4.html">COURTRIES</a>
+        <a class="block" href="Untitled-5.html">PICTURES</a>
+      <div class="main-content">
+        <h2>Travel Planning</h2>
+        <p><strong>
+        1.Determining where to go
+      </strong></p>
+      Maybe it was recommended by a friend, maybe you read a great travelogue, maybe this has always been your dream place. Or maybe you want to take a few days off? 
+      </strong></p>
+      Anyway! A place pops into your head, what is next?
+      </strong></p>
+      What you should know: The main places to travel in the destination country (provinces/cities/regions) and its highlights, how they are distributed on the map, approximate transportation conditions, local social stability and security, visa policy.
+      </strong></p>
+      What you need: A map, a overview of the destination, a list of information on the main things to see and do, and also a reference to other people's itineraries.
+      </strong></p>
+      First decide, "Where am I going?" Take Japan as an example. Then you'll search for what these places have to offer, and you'll know: Hokkaido - skiing, snacks, Okinawa - seeing the sea, Kyushu - hot springs, and so on. Depending on your preference, season and budget, set your destination to go.
+      </strong></p>
+      When you've determined, when do I plan to go somewhere, roughly how many days I'll be there, a particular city I'd like to visit, a particular city or cities I can spend more days in if I have more time, and a particular city I'm not too interested in that I can do without, you can move on to the next step: making an itinerary.
+        <p><strong>  
+        2. Making an itinerar
+      </strong></p>
+      There are more and more apps and tools for making itineraries these days, but I'm still in the habit of using paper and pen to keep track of how I plan my trips.
+      </strong></p>
+      The itinerary I always make has four columns for each:
+      Date / Where to go during the day / Where to go at night / Intercity transportation
+      </strong></p>
+      The planning order is left to right, just based on vacation and airfare, where to go during the day based on time of day and personal preference, where to sleep at night based on where to hang out during the day, and finally how to move around just comes naturally.
+        <p><strong>
+      3. Booking transportation and accommodation, refining and revising the intercity itinerary, and making budgets.
+    </strong></p>
+The itinerary above is complete but imprecise. So the following situations will occur:
+</strong></p>
+1) Extend or shorten the stay in a place
+</strong></p>
+2) Swap the order of sightseeing between two places
+</strong></p>
+3) Delete a place you don't like to visit.
+<p><strong>
+  4. Travel preparations
+</strong></p>
+1) Prepare clothes
+</strong></p>
+2）Exchange money
+</strong></p>
+3) Load an offline map of the city
+
+
+
+    <script>
+        const searchButton = document.getElementById('searchButton');
+        const searchInput = document.getElementById('searchInput');
+
+        searchButton.addEventListener('click', function() {
+            var searchTerm = searchInput.value; 
+            if (searchTerm.trim() !== "") {
+                alert("You are search for:" + searchTerm);
+            } else {
+                alert("Please enter a search term.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #feedbackForm {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    #feedbackForm textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    #feedbackForm input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+    #feedbackMessages {
+        margin-top: 20px;
+    }
+    .feedbackMessage {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<div id="feedbackForm">
+    <h2>Leave Feedback</h2>
+    <form id="form">
+        <textarea id="feedbackText" placeholder="Enter your feedback here"></textarea>
+        <input type="submit" value="Submit Feedback">
+    </form>
+</div>
+
+<div id="feedbackMessages"></div>
+
+<script>
+    const form = document.getElementById("form")
+    const feed = document.getElementById("feedbackText")
+    const feeTx = document.getElementById("feedbackMessages")
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        var feedbackText = feed.value;
+        if (feedbackText.trim() !== "") {
+            var feedbackMessage = document.createElement("div");
+            feedbackMessage.classList.add("feedbackMessage");
+            feedbackMessage.textContent = feedbackText;
+            feeTx.appendChild(feedbackMessage);
+            feed.value = "";
+        } else {
+            alert("Please enter your feedback.");
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color:hsl(193, 69%, 73%);;
+      background-size: cover;
+    }
+  
+    .header {
+      text-align: center;
+      padding: 20px;
+      filter: alpha(opactive=50);
+      opacity: 0.7;
+      background-image: url(图片6.png); 
+      color: hsl(193, 69%, 73%);
+    }
+
+    .block {
+      display:inline-table;
+      width: 240px;
+      height: 40px;
+      background-color: rgb(228, 136, 136);
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+      line-height: 40px;
+    }
+
+    .block:hover{
+      background-color: aquamarine;
+      color: #000;
+    }
+</style>
+</head>
+<body>
+    <header class="header"> 
+        <h1>Noreen's Travel Journey</h1>
+        <div class="gray">
+          Date: 2024-02-26
+          <input type="text" id="searchInput" placeholder="Please input your question">
+      <button id="searchButton">search</button>
+        </div>
+      </header>
+        <a class="block" href="project.html">HOME</a>
+        <a class="block" href="Untitled-3.html">PLANNING</a>
+        <a class="block" href="Untitled-2.html">BLOG</a>
+        <a class="block" href="Untitled-1.html">FEEDBACK</a>
+        <a class="block" href="Untitled-4.html">COURTRIES</a>
+        <a class="block" href="Untitled-5.html">PICTURES</a>
+      <div class="main-content">
+        <h2>Travel Paris</h2>
+        <p><strong>
+          The airplane landed at Charles de Gaulle Airport, and the clean surroundings caught my eye. Taking the airport bus to the hotel, the neat rows of small high-rise buildings and clean streets outside the window made me feel a little bit more favorable and expectant of this unfamiliar city. When I arrived at the hotel, lying on the soft bed, an inexplicable sense of comfort came to me, and the fatigue of the trip was soon alleviated.
+
+          When I woke up in the morning, I pushed open the window and the soft sunlight came to me. Paris is still in the quiet of the morning, the streets are empty, only a few pigeons cooing. 
+        </strong></p>
+          In China, the streets would have been full of people by now. As we walked along the street, we saw that the stores on both sides were not yet open, as if we were the only ones in the city. It was only when we arrived at the subway station that we realized where everyone was. Wave after wave of well-dressed French commuters were getting on the subway. I was told that the metro in Paris is almost 100 years old, which made me marvel. Riding the subway, we quickly arrived at the first destination of our visit, Notre Dame de Paris.
+    
+        </strong></p>
+          Notre Dame de Paris is a Christian church in Gothic style and the cathedral of the Catholic Archdiocese of Paris. Standing on the banks of the Seine River, in the center of the entire city of Paris, Notre Dame de Paris is one of the most splendid buildings in history. That famous building that I had only seen in books before now stood in front of me, making me excited. Walking into Notre Dame de Paris through the Gate of St. Anna, I saw the long line of pews on one side of the passage, and for some reason, my heart suddenly calmed down. The worshippers were worshiping there as if they were oblivious to the noisy tourists. On the other side of the aisle, separated from the main hall of the church, is a row of low walls more than one person high, decorated with beautiful eaves, is the color is not bright reliefs, as if a comic strip to tell the story of the Bible. Walking out of Notre Dame, and circled around it for a while, no matter from which angle you look at it, you can feel its exquisite elegance.
+        </strong></p>
+          Unconsciously at noon, we took the subway to the Champs Elysees. The busy street is full of people, and on both sides are some international famous brand stores, decorating this fashionable and romantic street. Looking towards the front of the street, there is the majestic Arc de Triomphe, which tells the story of Napoleon's triumph over the Russian and Austrian armies more than two hundred years ago. In the Arc de Triomphe, facing the Champs Elysées, burns a flame, the Everlasting Flame, which is the only flame that has never been extinguished, except for the Olympic flame, in honor of the French soldiers who died in the Battle of the Bulge in World War I. The Arc de Triomphe is the only flame that has never been extinguished, except for the Olympic flame, which has never been extinguished. Come to the garden above the Arc de Triomphe, overlooking the city of Paris, 12 avenues to the Arc de Triomphe as the center of the 12 directions in a radial spread, so you feel like you are in the center of the city of Paris.
+        </strong></p>
+          As night falls, thousands of lights illuminate the city of Paris. At night Paris looks beautiful and mysterious, we came to the Eiffel Tower. From a distance, it looks no different from an ordinary wire tower, except that the tower is shining with light. Along the way to the tower, met a lot of walking and yelling merchants, most of them are holding a large handful of small tower model. There are also a lot of "magicians" on the side of the road, they will be some things on the table back and forth to change places, let passers-by to guess the bet. Just when I was fascinated by these, the Eiffel Tower began to irregularly emit a strong flash of light around the body. The light lasted for about five minutes and then disappeared. It turns out that the Eiffel Tower puts on a light show once it reaches the full hour. Came to the bottom of the tower looked up, the more than 300 meters of the tower is really shocking. The designer of the Eiffel Tower, Gustave Eiffel, created a miracle with his extraordinary wisdom. We lined up to buy tickets to view the tower. From the bottom of the tower to the second level, the elevator went up at an angle, while the second level to the top faced straight up. Staying in an elevator with clear glass on both sides, one can't help but feel a little intimidated. When I came to the top floor, I found that the small space accommodated nearly a hundred people! The top floor is about 300 meters above the ground, and the cold wind made me shiver. We took a quick look at the night view through the binoculars and quickly descended the tower. In the process of descending the tower, I carefully observed the steel bars and rivets around the tower, thinking of the construction of the tower is difficult, I can not help but secretly admire. After the tour, it was late at night and we bought some souvenirs before heading back to the hotel.
+          
+        
+        </strong></p>
+    <script>
+        const searchButton = document.getElementById('searchButton');
+        const searchInput = document.getElementById('searchInput');
+
+        searchButton.addEventListener('click', function() {
+            var searchTerm = searchInput.value; 
+            if (searchTerm.trim() !== "") {
+                alert("You are search for:" + searchTerm);
+            } else {
+                alert("Please enter a search term.");
+            }
+        });
+    </script>
+</body>
+</html>
